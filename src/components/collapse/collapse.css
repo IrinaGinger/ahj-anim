@@ -1,0 +1,61 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+.collapse-button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: #ffffff;
+    background-color: #007bff;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+    transition: color 0.2s ease-in-out,
+        background-color 0.2s ease-in-out,
+        border-color 0.2s ease-in-out,
+        box-shadow 0.2s ease-in-out;
+
+    user-select: none;
+}
+
+.collapse-button:hover {
+    background-color: #0069d9;
+
+    cursor: pointer;
+}
+
+.button-active {
+    box-shadow: rgba(38, 143, 255, 0.5) 0 0 0 2px;
+
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.collapse-element {
+    display: flex;
+    position: relative;
+    overflow-y: hidden;
+
+    transition: max-height 0.5s ease-in-out;
+}
+
+.show {
+    transition: max-height 0.5s ease-in-out;
+}
+
+.collapse-content {
+    padding: 20px;
+    line-height: 1.5;
+
+    color: #2e2e2e;
+    background-color: #ffffff;
+    border: 1px solid #a0a0a0;
+    border-radius: 5px;
+}
